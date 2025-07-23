@@ -40,3 +40,41 @@
   - `hasNext()`: Checks if more elements exist
   - `next()`: Returns current element and moves to next
   - `remove()`: Safely removes last returned element
+
+
+## Set Interface
+  A set is a collection of elements which cannot contain duplicate values.
+
+### Types of Set
+  - Hashset (no insertion order,not sorted,fastest)
+  - LinkedHashSet (insertion order,not sorted,slightly slower)
+  - TreeSet (no insertion order, sorted,slowest)
+  
+#### 1. HashSet Basic Operations
+- Creating HashSet with `new HashSet<>()`
+- Adding elements and automatic duplicate handling
+- Basic operations: `add()`, `remove()`, `contains()`, `size()`, `isEmpty()`
+
+#### 2. Set Traversal
+- **Enhanced for-each loop** for simple iteration
+- **Iterator pattern** for safe traversal with removal capability
+
+#### 3. Set Mathematical Operations
+- **Union**: Combining sets with `addAll()`
+- **Intersection**: Finding common elements with `retainAll()`
+- **Difference**: Removing elements with `removeAll()`
+
+#### 4. Duplicate Removal from Collections
+Two practical approaches:
+- **Constructor method**: `Set<String> nodups = new HashSet<>(collection)`
+- **Array conversion**: `new HashSet<>(Arrays.asList(array))`
+
+#### 5. Set to Array Conversion
+- Converting set back to array: `set.toArray(new String[0])`
+- Printing arrays: `Arrays.toString(array)`
+
+#### 6. Practical Application: Word Frequency Counter
+- Using `HashMap<String, Integer>` to count occurrences
+- `getOrDefault()` method for safe counting
+- Processing arrays with duplicate elements
+
