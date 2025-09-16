@@ -1,6 +1,7 @@
 package Collections;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 import java.util.List;
 
 // Collections Framework
@@ -80,7 +81,20 @@ public class Main{
                 names.add("Kumar");
 
                 names.forEach(n ->  System.out.println("Hello "+ n));
+                // stream()
 
+                ArrayList<Integer> nums = new ArrayList<Integer>();
+
+                nums.add(1);
+                nums.add(2);
+                nums.add(3);
+                nums.add(4);
+                nums.add(5);
+                
+                Iterator<Integer> it = nums.iterator();
+                while (it.hasNext()) {
+                        System.out.println(it.next());
+                }
                 
         }
 }
